@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FoodieExpress | Food Delivery</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar">
+
+        <h2 class="logo">
+            <i class="fas fa-utensils"></i>
+            Foodie<span>Express</span>
+        </h2>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#cart">My Cart</a></li>
+        </ul>
+
+        <a href="#cart" class="cart-button">
+            <i class="fas fa-shopping-cart"></i>
+            Cart <span id="cartCount">0</span>
+        </a>
+
+    </nav>
+</header>
+
+
+<!-- HOME SECTION -->
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <h1>
+            Delicious Food,
+            <span>Delivered Fast!</span>
+        </h1>
+
+        <p>
+            Order your favourite food from our menu.
+            Fresh, tasty and delivered to your doorstep.
+        </p>
+
+        <a href="#menu" class="hero-btn">
+            Explore Menu
+        </a>
+
+    </div>
+
+    <div class="hero-image">
+        <img
+        src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=700"
+        alt="Delicious Pizza">
+    </div>
+
+</section>
+
+
+<!-- FOOD MENU -->
+<section class="menu-section" id="menu">
+
+    <h2 class="section-title">
+        Our <span>Food Menu</span>
+    </h2>
+
+    <p class="section-subtitle">
+        Choose your favourite delicious food
+    </p>
+
+    <div class="food-container" id="foodContainer">
+
+        <!-- Food cards are generated using JavaScript -->
+
+    </div>
+
+</section>
+
+
+<!-- CART SECTION -->
+<section class="cart-section" id="cart">
+
+    <h2 class="section-title">
+        My <span>Shopping Cart</span>
+    </h2>
+
+    <div class="cart-container">
+
+        <div id="cartItems">
+
+            <!-- Cart items displayed here -->
+
+        </div>
+
+        <div class="cart-summary">
+
+            <h3>Order Summary</h3>
+
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <span id="subtotal">₹0</span>
+            </div>
+
+            <div class="summary-row">
+                <span>Delivery Fee</span>
+                <span id="deliveryFee">₹0</span>
+            </div>
+
+            <div class="summary-row">
+                <span>Tax (5%)</span>
+                <span id="tax">₹0</span>
+            </div>
+
+            <hr>
+
+            <div class="total-row">
+                <span>Total Amount</span>
+                <span id="totalPrice">₹0</span>
+            </div>
+
+            <button id="checkoutBtn" class="checkout-btn">
+                Proceed to Checkout
+                <i class="fas fa-arrow-right"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <h2>FoodieExpress</h2>
+
+    <p>
+        Delicious food delivered with love.
+    </p>
+
+    <p>© 2026 FoodieExpress. All Rights Reserved.</p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
